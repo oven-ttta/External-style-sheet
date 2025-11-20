@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Sofia&family=Mali&display=swap');
+
+body {
+    background-color: #ece9f8;
+    color: #36263f;
+    font-family: 'Mali', Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+.page-container {
+    max-width: 1100px;
+    margin: 30px auto;
+    background-color: #f5f0ff;
+    padding: 30px 20px 50px;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(54,38,63,0.08);
+}
+
+.main-heading {
+    font-size: 3.8em;
+    color: #6a0dad;
+    font-family: 'Sofia', 'Mali', cursive;
+    margin: 0 0 10px;
+}
+
+.page-container p {
+    margin: 8px 0;
+    color: #5a3a63;
+}
+
+.center-table {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.center-table th, .center-table td {
+    border: 1px solid #c9b3e6;
+    padding: 10px 18px;
+    text-align: center;
+}
+
+.center-table th.google-font {
+    font-family: 'Mali', 'Sofia', cursive;
+    font-size: 1.1em;
+    background-color: #efe9ff;
+    color: #4b1f66;
+}
+
+.center-table tbody tr.data-row:hover {
+    background-color: #e2ccff;
+    color: #2b0036;
+}
+
+.drinks {
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.drinks-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 10px;
+    font-weight: 700;
+    color: #4b1f66;
+    width: 100%;
+}
+
+.drinks-header:hover {
+    background-color: #e2ccff;
+    color: #2b0036;
+}
+.drinks-header span {
+    width: 48%;
+    text-align: center;
+    font-family: 'Sofia', cursive;
+}
+
+.drink-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 10px;
+    width: 100%;
+    background: transparent;
+    transition: background-color 0.15s ease;
+}
+
+.drink-row:hover {
+    background-color: #e2ccff;
+    color: #2b0036;
+}
+
+.drink-name, .drink-time {
+    font-family: 'Mali', cursive;
+    width: 48%;
+    text-align: center;
+}
+
+@media (max-width: 520px) {
+    .drinks, .center-table { width: 90%; }
+    .drinks-header, .drink-row { flex-direction: column; align-items: center; }
+    .drinks-header span, .drink-row span { width: 100%; display: block; }
+    .drinks-header { text-align: center; }
+}
+
+.order-link {
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 5px;
+    display: inline-block;
+    color: #6a0dad;
+}
+
+.order-link.active-link:active {
+    background-color: #e9d8ff;
+    color: #33043a;
+}
+
+a:link, a:visited {
+    color: #5a0f9e;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    background-color: #e9d8ff;
+}
+
+@media (max-width: 700px) {
+    .center-table { width: 90%; }
+    .main-heading { font-size: 2.4em; }
+}
