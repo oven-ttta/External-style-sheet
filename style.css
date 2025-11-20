@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Sofia&family=Mali&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Sofia&family=Mali&family=Kanit&display=swap');
 
 body {
     background-color: #ece9f8;
@@ -16,7 +16,7 @@ body {
 .main-heading {
     font-size: 3.8em;
     color: #6a0dad;
-    font-family: 'Sofia', 'Mali', cursive;
+    font-family: 'Kanit', cursive;
     margin: 0 0 10px;
 }
 
@@ -26,30 +26,32 @@ body {
 }
 
 .center-table {
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    border-collapse: collapse;
-    margin-top: 18px;
-    margin-bottom: 18px;
+    width: 360px;
+    margin: 18px auto;
+    border-collapse: separate;
+    border-spacing: 0 12px;
+    background: transparent;
 }
 
-.center-table th, .center-table td {
-    border: 1px solid #c9b3e6;
-    padding: 10px 18px;
+.center-table th,
+.center-table td {
+    border: none;
+    padding: 8px 18px;
     text-align: center;
+    background: transparent;
 }
 
 .center-table th.google-font {
     font-family: 'Mali', 'Sofia', cursive;
-    font-size: 1.1em;
-    background-color: #efe9ff;
+    font-size: 1.05em;
+    background-color: transparent;
     color: #4b1f66;
 }
 
 .center-table tbody tr.data-row:hover {
     background-color: #e2ccff;
     color: #2b0036;
+    border-radius: 4px;
 }
 
 .drinks {
@@ -76,6 +78,7 @@ body {
     background-color: #e2ccff;
     color: #2b0036;
 }
+
 .drinks-header span {
     width: 48%;
     text-align: center;
@@ -97,17 +100,35 @@ body {
     color: #2b0036;
 }
 
-.drink-name, .drink-time {
+.drink-name,
+.drink-time {
     font-family: 'Mali', cursive;
     width: 48%;
     text-align: center;
 }
 
 @media (max-width: 520px) {
-    .drinks, .center-table { width: 90%; }
-    .drinks-header, .drink-row { flex-direction: column; align-items: center; }
-    .drinks-header span, .drink-row span { width: 100%; display: block; }
-    .drinks-header { text-align: center; }
+
+    .drinks,
+    .center-table {
+        width: 90%;
+    }
+
+    .drinks-header,
+    .drink-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .drinks-header span,
+    .drink-row span {
+        width: 100%;
+        display: block;
+    }
+
+    .drinks-header {
+        text-align: center;
+    }
 }
 
 .order-link {
@@ -123,7 +144,8 @@ body {
     color: #33043a;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
     color: #5a0f9e;
     text-decoration: none;
 }
@@ -134,6 +156,11 @@ a:hover {
 }
 
 @media (max-width: 700px) {
-    .center-table { width: 90%; }
-    .main-heading { font-size: 2.4em; }
+    .center-table {
+        width: 90%;
+    }
+
+    .main-heading {
+        font-size: 2.4em;
+    }
 }

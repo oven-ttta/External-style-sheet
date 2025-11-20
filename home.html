@@ -1,47 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>My First Styled Website</title>
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="page-container">
         <h1 class="main-heading">This is my first Styled Website</h1>
 
         <p>Hi folks! Below table is my favorite drinks.</p>
-        
-        <div class="center-table">
-            <div class="drinks-header">
-                <span class="google-font">Drink</span>
-                <span class="google-font">Time to drink</span>
-            </div>
 
-            <div class="drink-row data-row">
-                <span class="drink-name">Hot Americano</span>
-                <span class="drink-time">Morning</span>
-            </div>
-            <div class="drink-row data-row">
-                <span class="drink-name">Hot Latte</span>
-                <span class="drink-time">Morning</span>
-            </div>
-            <div class="drink-row data-row">
-                <span class="drink-name">Ice Oolong Tea</span>
-                <span class="drink-time">Afternoon</span>
-            </div>
-            <div class="drink-row data-row">
-                <span class="drink-name">Warm Milk</span>
-                <span class="drink-time">Midnight</span>
-            </div>
-        </div>
-        
+        <table class="center-table">
+            <thead>
+                <tr>
+                    <th class="google-font">Drink</th>
+                    <th class="google-font">Time to drink</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="drink-name">Hot Americano</td>
+                    <td class="drink-time">Morning</td>
+                </tr>
+                <tr>
+                    <td class="drink-name">Hot Latte</td>
+                    <td class="drink-time">Morning</td>
+                </tr>
+                <tr>
+                    <td class="drink-name">Ice Oolong Tea</td>
+                    <td class="drink-time">Afternoon</td>
+                </tr>
+                <tr>
+                    <td class="drink-name">Warm Milk</td>
+                    <td class="drink-time">Midnight</td>
+                </tr>
+            </tbody>
+        </table>
+
         <p class="order-link">Click to Order</p>
         <p>
-            <a href="#" class="order-link active-link">Starbucks Thailand</a> 
-            <a href="#" class="order-link active-link">All Cafe</a> 
-            <a href="#" class="order-link active-link">True Coffee</a> 
+            <a href="#" class="order-link active-link">Starbucks Thailand</a>
+            <a href="#" class="order-link active-link">All Cafe</a>
+            <a href="#" class="order-link active-link">True Coffee</a>
             <a href="#" class="order-link active-link">Mister Donut</a>
         </p>
     </div>
 </body>
+
 </html>
