@@ -41,9 +41,10 @@ body {
     background: transparent;
 }
 
-.center-table th.google-font {
+.center-table td.google-font {
     font-family: 'Mali', 'Sofia', cursive;
     font-size: 1.05em;
+    font-weight: bold;
     background-color: transparent;
     color: #4b1f66;
 }
@@ -52,6 +53,26 @@ body {
     background-color: #e2ccff;
     color: #2b0036;
     border-radius: 4px;
+}
+
+.center-table tbody tr:hover td {
+    background-color: #e2ccff;
+    color: #2b0036;
+    transition: background-color 0.18s ease, color 0.18s ease;
+}
+
+.center-table tbody tr:hover td:first-child {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.center-table tbody tr:hover td:last-child {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.center-table tbody tr:hover {
+    cursor: pointer;
 }
 
 .drinks {
@@ -77,6 +98,7 @@ body {
 .drinks-header:hover {
     background-color: #e2ccff;
     color: #2b0036;
+    transition: background-color 0.18s ease, color 0.18s ease;
 }
 
 .drinks-header span {
@@ -98,6 +120,7 @@ body {
 .drink-row:hover {
     background-color: #e2ccff;
     color: #2b0036;
+    transition: background-color 0.18s ease, color 0.18s ease;
 }
 
 .drink-name,
@@ -142,6 +165,7 @@ body {
 .order-link.active-link:active {
     background-color: #e9d8ff;
     color: #33043a;
+    transition: background-color 0.18s ease, color 0.18s ease;
 }
 
 a:link,
@@ -153,6 +177,8 @@ a:visited {
 a:hover {
     text-decoration: underline;
     background-color: #e9d8ff;
+    border-radius: 12px;
+    transition: background-color 0.18s ease, color 0.18s ease;
 }
 
 @media (max-width: 700px) {
